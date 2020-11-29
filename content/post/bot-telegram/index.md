@@ -16,10 +16,11 @@ Let me come to the point without any delay. You can serve your model as you thin
 
 
 
-
-
-<p align="center"><img src="https://media.giphy.com/media/l4Ki8WjiS8RCQATDi/source.gif" style="zoom:100%;" />
-
+{{< figureCupper
+img="img.png" 
+caption="" 
+command="Resize" 
+options="500x" >}}
 
 
 
@@ -133,6 +134,11 @@ web: python bot.py
 
 Now use heroku-cli to deploy your bot. 
 
+My telegram-bot template [link](https://github.com/ash11sh/bot), Use this for reference. 
+
+<p align="center"><img src="https://media.giphy.com/media/DEexZ5C3GHALC/source.gif" style="zoom:100%;" />
 
 
-My telegram-bot template [link](https://github.com/ash11sh/bot), Use this for reference.
+
+
+
