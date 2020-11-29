@@ -1,8 +1,8 @@
 ---
-date: "2019-10-1"
+date: "2019-10-11"
 draft: false
-lastmod: "2019-10-1"
-publishdate: "2019-10-1"
+lastmod: "2019-10-11"
+publishdate: "2019-10-11"
 tags:
 - CV
 title: Finding Computer Vision Datasets
