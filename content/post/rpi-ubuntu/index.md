@@ -134,3 +134,103 @@ reboot : - )
 * Build tensorflow-lite using the pre-built binaries from this repo: https://github.com/PINTO0309/TensorflowLite-bin
 
  
+## opencv install
+
+### Option 1
+
+directly installing from  ppa repo:
+
+
+{{< cmd >}}
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt install libopencv-dev python3-opencv
+{{< /cmd >}}
+
+
+you can verify the installation by following command:
+{{< cmd >}}
+python3 -c "import cv2; print(cv2.__version__)"
+{{< /cmd >}}
+
+
+### Option 2 - directly from source
+
+Before moving forward remember to set swap space(> 3gb), it is essential for build process.
+
+Install these following dependencies
+
+{{< cmd >}}
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install build-essential cmake gcc g++ git unzip pkg-config
+sudo apt-get install libjpeg-dev libpng-dev libtiff-dev
+sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev
+sudo apt-get install libgtk2.0-dev libcanberra-gtk*
+sudo apt-get install libxvidcore-dev libx264-dev
+sudo apt-get install python3-dev python3-numpy python3-pip
+sudo apt-get install libtbb2 libtbb-dev libdc1394-22-dev
+sudo apt-get install libv4l-dev v4l-utils
+sudo apt-get install libopenblas-dev libatlas-base-dev libblas-dev
+sudo apt-get install liblapack-dev gfortran libhdf5-dev
+sudo apt-get install libprotobuf-dev libgoogle-glog-dev libgflags-dev
+sudo apt-get install protobuf-compiler
+{{< /cmd >}}
+
+Next, download and unzip the packages
+
+{{< cmd >}}
+cd ~
+wget -O opencv.zip https://github.com/opencv/opencv/archive/4.4.0.zip
+wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/4.4.0.zip
+unzip opencv.zip
+unzip opencv_contrib.zip
+#rename the folders
+mv opencv-4.4.0 opencv
+mv opencv_contrib-4.4.0 opencv_contrib
+cd opencv
+mkdir build
+cd build
+{{< /cmd >}}
+
+Build make
+
+```shell
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+	  -D CMAKE_INSTALL_PREFIX=/usr/local \
+	  -D OPENCV_EXTRA_MODULES_PATH=~/opencv_contrib/modules \
+	  -D ENABLE_NEON=ON \
+	  -D BUILD_TIFF=ON \
+      -D WITH_FFMPEG=ON \
+	  -D WITH_GSTREAMER=ON \
+	  -D WITH_TBB=ON \
+      -D BUILD_TBB=ON \
+      -D BUILD_TESTS=OFF \
+      -D WITH_EIGEN=OFF \
+      -D WITH_V4L=ON \
+      -D WITH_LIBV4L=ON \
+      -D WITH_VTK=OFF \
+      -D OPENCV_ENABLE_NONFREE=ON \
+      -D INSTALL_C_EXAMPLES=OFF \
+      -D INSTALL_PYTHON_EXAMPLES=OFF \
+      -D BUILD_NEW_PYTHON_SUPPORT=ON \
+      -D BUILD_opencv_python3=TRUE \
+      -D OPENCV_GENERATE_PKGCONFIG=ON \
+      -D BUILD_EXAMPLES=OFF ..
+```
+
+build with these commands
+
+{{< cmd >}}
+make -j4
+sudo make install
+sudo ldconfig
+sudo apt-get update
+{{< /cmd >}}
+
+Verify installation
+{{< cmd >}}
+pkg-config --modversion opencv4
+python3 -c "import cv2; print(cv2.__version__)"
+{{< /cmd >}}
+
