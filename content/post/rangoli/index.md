@@ -29,7 +29,11 @@ title: How I trained my Rangoli Art(GAN)
 
 Firstly I thouht of using pre-made data-sets, but decided to build one. Making a data-set is painful process but rewarding. I used instagram and search engine scrappers to download rangoli images. Found many on web, really thankful to the Indian tradition and people. 
 
-<img src="https://live.staticflickr.com/65535/50698038511_e8437cbe77_k_d.jpg" style="zoom:200%;" />
+<img src="https://live.staticflickr.com/65535/50698038511_e8437cbe77_k_d.jpg" style="zoom:200%;" />																			<em>real images</em>
+
+
+
+
 
 ## Image Preprocessing
 
@@ -69,6 +73,12 @@ Out there many forks are available for Stylegan2, good one is [Peter Baylies](ht
 
 I used this fork by [woctezuma](https://github.com/woctezuma/steam-stylegan2), which allows you to resume training from where you left.  Converted data into tfrecord format (size matters in colab). You can see generated fake images for every tick (1tick = 5000 imgs). Each takes 15 min time for P100 gpu. 
 
-<img src="https://live.staticflickr.com/65535/50698041696_36464f7d52_k_d.jpg" style="zoom:200%;" />
+
+
+<img src="https://live.staticflickr.com/65535/50698041696_36464f7d52_k_d.jpg" style="zoom:200%;" />																		<em>fake images</em>
+
+​						                                                       
+
+
 
 Calculate the fid metrics (takes about 15min) so that you know how model is performing and when to stop training. 
