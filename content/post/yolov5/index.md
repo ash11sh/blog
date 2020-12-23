@@ -73,6 +73,8 @@ nc: 1
 names: ['tiger']
 ```
 
+here `nc  `  refers to number of classes.
+
 
 
 ## train
