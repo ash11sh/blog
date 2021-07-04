@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Ashish&#39;s blog</title>
+    <link>https://ash11sh.github.io/</link>
+    <description>Recent content in Home on Ashish&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 26 Jun 2017 18:27:58 +0100</lastBuildDate><atom:link href="https://ash11sh.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Removing Eye-glasses from face</title>
+      <link>https://ash11sh.github.io/eye-gan/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/eye-gan/</guid>
+      <description>intro I recently tried to implement code for trying out glass frames like snapchat filter. Used OpenCV and numpy for this process of overlaying frame. Result came out good for frontal posed face.
+ demo - overlaying frame   But you need to give input image without wearing glasses to get better results. I tried giving an image of person with wearing glasses and it came out like this.</description>
+    </item>
+    
+    <item>
+      <title>Yolov5 training with Custom Dataset</title>
+      <link>https://ash11sh.github.io/yolov5/</link>
+      <pubDate>Wed, 23 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/yolov5/</guid>
+      <description>intro I recently came across wildlife projects using AI and how they are helping in protecting endangered species and thought of making a model to help detecting tigers🐅 in the wild. Scroll down, too see how i trained my object detection model.
+​
+If you are active in computer vision, you may have heard about yolov5. There&amp;rsquo;s some controversy around its naming, you can read details from here. Ultralytics team put a great effort in open-sourcing this model 👏👏👏</description>
+    </item>
+    
+    <item>
+      <title>How I trained my Rangoli Art(GAN)</title>
+      <link>https://ash11sh.github.io/rangoli/</link>
+      <pubDate>Mon, 07 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/rangoli/</guid>
+      <description>Materials I used :  Data-set comprising of rangoli images ( ~13k) StyleGan2 - Tensorflow A little patience Google Colab (Tesla P100 ~24gb ram)  Firstly I thouht of using pre-made data-sets, but decided to build one. Making a data-set is painful process but rewarding. I used instagram and search engine scrappers to download rangoli images. Found many on web, really thankful to the Indian tradition and people.
+real images</description>
+    </item>
+    
+    <item>
+      <title>Installing Ubuntu 20.04 on raspberry pi for Tensorflow</title>
+      <link>https://ash11sh.github.io/rpi-ubuntu/</link>
+      <pubDate>Wed, 02 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/rpi-ubuntu/</guid>
+      <description>Why Ubuntu - 32 bit/ 64 bit ? Out of plenty of operating systems available for raspberry pi, we need stable one&amp;rsquo;s intended to run ml projects (tf-lite, opencv). Raspberry Pi group&amp;rsquo;s debian based raspbian os provide good support and stable, but it is 32 bit. There is a 64 bit version out but in beta stage. We need a 64 bit OS for increased performance. Ubuntu provides OS in 64 bit version for rpi.</description>
+    </item>
+    
+    <item>
+      <title>Deploying your ml model via telegram bot</title>
+      <link>https://ash11sh.github.io/bot-telegram/</link>
+      <pubDate>Fri, 27 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/bot-telegram/</guid>
+      <description>Intro Let me come to the point without any delay. You can serve your model as you think, and there is no set of rules for this. You can deploy through mobile app / web-app, there are plenty of guidance availble in vast internet. Or else you can get to your customers/users through a simple telegram bot. It is simpler than you think. Let&amp;rsquo;s go build it.
+   Pre-requisites:   There are plenty of telegram bot wrappers available for python.</description>
+    </item>
+    
+    <item>
+      <title>Building Image Dataset</title>
+      <link>https://ash11sh.github.io/image-dataset/</link>
+      <pubDate>Wed, 11 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/image-dataset/</guid>
+      <description>It&amp;rsquo;s bit of hectic process in creating image datasets. It Basically consists of below mentioned pipeline.(to my understanding)
+ Model Bias. Whats your model goal? Ways to collect images. Cleaning the data. Resizing the images.   Model Bias Can you solve this riddle??
+ A man and his son are in a terrible accident and are rushed to the hospital in critical care. The doctor looks at the boy and exclaims &amp;ldquo;I can&amp;rsquo;t operate on this boy, he&amp;rsquo;s my son!</description>
+    </item>
+    
+    <item>
+      <title>Finding Computer Vision Datasets</title>
+      <link>https://ash11sh.github.io/cv-data/</link>
+      <pubDate>Fri, 11 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/cv-data/</guid>
+      <description>&lt;p&gt;This article list outs resources to find the trending data-sets in computer vision field useful for beginners and other practitioners.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://ash11sh.github.io/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://ash11sh.github.io/about/</guid>
+      <description>I&amp;rsquo;m Ashish Veeragoni and this is my blog.
+I set-up this blog after trying various hugo themes, hope this lasts. I&amp;rsquo;m interested and build projects mostly around computer vision. I majored in Mechanical Engineering and begin writing code around my final year ᕙ(`▿´)ᕗ
+ ☎️📨 You can find me on twitter or telegram</description>
+    </item>
+    
+  </channel>
+</rss>
